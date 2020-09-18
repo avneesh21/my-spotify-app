@@ -1,0 +1,11 @@
+/* .text-center {
+    margin-top: 550px;
+} */
+
+* {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    color: black;
+}

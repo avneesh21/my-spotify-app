@@ -1,0 +1,19 @@
+* {
+    color: black;
+}
+
+nav.navbar.navbar-expand-lg {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a.nav-link {
+    font-size: 22px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
