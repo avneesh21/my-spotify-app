@@ -14,7 +14,7 @@ body {
   }
   
   .blink {
-    color: #d88;
+    color: #E50914;
     font-size: 1.0em;
     animation: blink-anim 1s ease 0s infinite alternate;
   }
