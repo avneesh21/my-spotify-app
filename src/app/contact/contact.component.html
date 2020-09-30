@@ -1,53 +1,57 @@
 <!-- FORM -->
 
 
-    <div>
-      <br><br>
+<div>
 
-      <!-- STRING INTERPOLATION -->
-      <h4><b>{{ strInterpolation }}</b></h4>
+  <!-- STRING INTERPOLATION -->
+  <h4><b>{{ strInterpolation }}</b></h4>
 
-      <!-- PROPERTY BINDING -->
-      <i><h4 [title]='propBind'>Hover the mouse over this to see the text</h4></i>
+  <!-- PROPERTY BINDING -->
+  <i>
+    <h4 [title]='propBind'>Hover the mouse over this to see the text</h4>
+  </i>
 
-      <!-- CLASS BINDING -->
-      <h4 [ngClass]="{'classBinding': isTrue()}">This shows Class Binding!</h4>
+  <!-- CLASS BINDING -->
+  <h4 [ngClass]="{'classBinding': isTrue()}">This shows Class Binding!</h4>
 
-      <!-- BINDING AN IMAGE USING PROPERTY BINDING -->
-      <h5>Binding an image using Property Binding&nbsp;&nbsp;
-      <img [src]="'https://upload.wikimedia.org/wikipedia/en/a/a1/Larsen%26Toubro_logo.svg'" [height]="20"></h5>
+  <!-- BINDING AN IMAGE USING PROPERTY BINDING -->
+  <h5>Binding an image using Property Binding&nbsp;&nbsp;
+    <img [src]="'https://upload.wikimedia.org/wikipedia/en/a/a1/Larsen%26Toubro_logo.svg'" [height]="20"></h5>
 
-      <!-- EVENT BINDING -->
-      <h5>Click this button to execute Event Binding</h5>
-      <button class="btn btn-success" (click)="goToHomeHandler()">Go to home</button><br><br>
+  <!-- EVENT BINDING -->
+  <h5>Click this button to execute Event Binding</h5>
+  <button class="btn btn-success" (click)="goToHomeHandler()">Go to home</button><br><br>
 
-      <!-- TWO WAY BINDING -->
-      <div><h5>Enter your first name and last name:
-         <input type="text" [(ngModel)]="fname" placeholder="First Name">&nbsp;<input type="text" [(ngModel)]="lname" placeholder="Last Name">
-      </h5>
-      <h5>Entered data is: <span style="color: #1DB954;">{{ fname }} </span><span style="color: #E50914">{{lname}}</span></h5></div>  
+  <!-- TWO WAY BINDING -->
+  <div>
+    <h5>Enter your first name and last name:
+      <input type="text" [(ngModel)]="fname" placeholder="First Name">&nbsp;<input type="text" [(ngModel)]="lname"
+        placeholder="Last Name">
+    </h5>
+    <h5>Entered data is: <span style="color: #1DB954;">{{ fname }} </span><span style="color: #E50914">{{lname}}</span>
+    </h5>
+  </div>
 
-      <!-- <div><input type="text" [(ngModel)]="fname">
+  <!-- <div><input type="text" [(ngModel)]="fname">
       <input type="text" [(ngModel)]="lname">
       <h6>Your Name : {{fname}} {{lname}} </h6></div> -->
-      
-    </div>
 
-      <br><br>
+</div>
+
+<br>
 <form>
   <div class="form-group">
-      <label for="inputEmail1">Email address</label>
-      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" required>
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <label for="inputEmail1">Email address</label>
+    <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" required>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
-    <div class="form-group">
-      <label for="inputPassword1">Password</label>
-      <input type="password" class="form-control" id="inputPassword1">
-    </div>
-    <div class="form-group form-check">
-      <input type="checkbox" class="form-check-input" id="check1" required>
-      <label class="form-check-label" for="check1">I'm not a robot</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="form-group">
+    <label for="inputPassword1">Password</label>
+    <input type="password" class="form-control" id="inputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="check1" required>
+    <label class="form-check-label" for="check1">I'm not a robot</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-

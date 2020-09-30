@@ -2,14 +2,14 @@
     color: #191414;
 }
 
-nav.navbar.navbar-expand-lg {
+nav.navbar.navbar-expand-lg.navbar-light {
     margin-left: 70px;
     margin-right: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-a.nav-link {
+a.nav-link, a.nav-link.active {
     font-size: 22px;
 }
 

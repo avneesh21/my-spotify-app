@@ -1,14 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
 
 * {
     /* font-family: 'Ubuntu', sans-serif;*/
     font-family: 'Ubuntu', sans-serif; 
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
 }
 
 .greyText {
     color: gray;
 }
 
+
+/* div.mat-form-field-wrapper.ng-tns-c100-0{
+       padding: 0px;
+} */
 /* ::-webkit-scrollbar {
     width: 10px;
   } */
@@ -79,4 +87,19 @@
     .mat-sidenav-content::-webkit-scrollbar-track, body::-webkit-scrollbar-track, mat-sidenav.sidenav::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.mat-tab-label{
+    color: black !important;
+}
+
+/* body{
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+} */
 

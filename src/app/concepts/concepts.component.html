@@ -1,4 +1,52 @@
-<div class="container">
+<mat-tab-group #tabRef animationDuration="0ms">
+  <mat-tab label="Pipes">
+    <br>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Project ID&nbsp;&nbsp;&nbsp;</th>
+          <th>Technology Used</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let project of projectdetails">
+          <td>{{ project.id }}</td>
+          <td>{{ project.technology | uppercase }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <div class="row">
+      <div class="labeltag">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;Enter the date for these projects:&nbsp;&nbsp;</p>
+      </div>
+
+      <div class="">
+        <mat-form-field>
+          <mat-label>Enter the date</mat-label>
+          <input matInput [matDatepicker]="myDatePicker" [min]="minDate" [max]="maxDate">
+          <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
+          <mat-datepicker #myDatePicker></mat-datepicker>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Childrouting"><br>Childrouting Example</mat-tab>
+</mat-tab-group>
+
+<br><br><br>
+<h6><strong>Angular Material</strong> is used on this page for the tabs. <a href="https://material.angular.io/">Click
+    here</a> to know more about Angular Material.</h6>
+<!-- <button class="btn btn-primary" onclick="disp(tabRef.selectedIndex)">View Selected Index</button> -->
+<!-- <strong>Selected index: </strong>{{ tabRef.selectedIndex }} this is used to print the index of the current tab in the array of elements of <mat-tab> -->
+
+
+
+
+
+<!-- <div class="container">
         <ul class="nav nav-pills nav-fill">
                 <li class="nav-item" routerLinkActive='active-link' [routerLinkActiveOptions]="{exact: true}">
                   <a class="nav-link" routerLink="./childrouting">Child Routing</a>
@@ -8,4 +56,5 @@
                   <a class="nav-link" routerLink="./link">Link</a>
                 </li>
         </ul>
-</div>
+</div> 
+-->
